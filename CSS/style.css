@@ -1,6 +1,6 @@
 :root {
     --dark: #424242;
-    --primary__color: #ff900e1a;
+    --primary__bg__color: #ff900e1a;
     --button__color: #FF900E;
     --button__text_color: #FFFFFF;
 }
@@ -13,7 +13,7 @@
 }
 
 header {
-    background-color: var(--primary__color);
+    background-color: var(--primary__bg__color);
 }
 
 /* navbar styling CSS start here */
@@ -47,6 +47,8 @@ nav ul li {
 
 /* navbar styling CSS end  */
 
+
+/* banner styling CSS start  */
 .banner__text {
     display: flex;
     flex-direction: column;
@@ -75,4 +77,42 @@ nav ul li {
 .banner__image img {
     width: 80vw;
     margin: 0 8.44rem;
+}
+
+/* banner styling CSS end  */
+
+
+.feature__section {
+    margin: 75px 135px;
+    width: 1152px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+}
+
+.feature__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.feature__images img {
+    width: 342px;
+    height: 342px;
+}
+
+.feature__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#fea__tit__part {
+    color: #727272;
+}
+
+#feature__title_part {
+    color: var(--button__color);
 }
