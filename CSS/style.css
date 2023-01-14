@@ -1,8 +1,40 @@
+:root {
+    --dark: #424242;
+    --primary__color: #ff900e1a;
+}
+
+/* default browser style reseting */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: red;
+
+/* navbar styling CSS start here */
+nav {
+    font-family: work sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4rem 5rem;
+    color: var(--dark);
 }
+
+nav h1{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+/* navbar styling CSS end  */
