@@ -179,9 +179,15 @@ nav ul li {
 }
 
 
+/* some facts section  */
 .some_facts_section {
     width: 80vw;
     margin: 0 auto;
+}
+
+.some_fact_text h1 {
+    font-weight: 700;
+    font-size: 28px;
 }
 
 .reaward_and_review_card {
@@ -191,7 +197,7 @@ nav ul li {
 }
 
 .awards_card {
-    margin: 2em 0;
+    margin: 4em 0;
     box-shadow: 0.02em 0.02em, -0.01em 0 .04em;
     text-align: center;
     box-sizing: border-box;
@@ -204,4 +210,26 @@ nav ul li {
     background-color: rgba(248, 232, 185, 0.916);
     transform: box-shadow 0.1s;
     transform-box: view-box;
+}
+
+/* sponspors section  */
+.sponspors {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.sponspors__text {
+    text-align: center;
+}
+
+.sponspors__text h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+.sponspors__logo__section{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 4em 0;
 }
