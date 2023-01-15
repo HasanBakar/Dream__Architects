@@ -125,12 +125,13 @@ nav ul li {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 6.5rem;
+    column-gap: 6.25rem;
+    margin-bottom: 8rem;
 }
 
-/* .feature_section_love_enjoy_text {
-    background-color: red;
-} */
+.feature_section_love_enjoy_text {
+    background-color: rgba(246, 244, 244, 0.109);
+}
 
 .feature__left__border {
     border-left: 4.5px solid var(--button__color);
@@ -175,4 +176,32 @@ nav ul li {
 #btn__position h1 {
     font-weight: 900;
     font-size: 45px;
+}
+
+
+.some_facts_section {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.reaward_and_review_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 6rem;
+}
+
+.awards_card {
+    margin: 2em 0;
+    box-shadow: 0.02em 0.02em, -0.01em 0 .04em;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    border: solid var(--button__color) 1.5px;
+    padding: 2em 3em;
+}
+
+.awards_card:hover {
+    background-color: rgba(248, 232, 185, 0.916);
+    transform: box-shadow 0.1s;
+    transform-box: view-box;
 }
