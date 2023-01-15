@@ -13,6 +13,8 @@
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
+
+
 /* default browser style reseting */
 * {
     box-sizing: border-box;
@@ -23,6 +25,8 @@
 header {
     background-color: var(--primary__bg__color);
 }
+
+
 
 /* navbar styling CSS start here */
 nav {
@@ -37,7 +41,7 @@ nav {
 
 nav h1 {
     font-weight: 700;
-    /* font-size: 2.8rem; */
+    font-size: 2.4rem;
 }
 
 nav ul {
@@ -49,11 +53,13 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    /* font-size: 1.125rem; */
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 /* navbar styling CSS end  */
+
+
 
 
 /* banner styling CSS start  */
@@ -90,6 +96,8 @@ nav ul li {
 /* banner styling CSS end  */
 
 
+
+
 /* quick list feature section styling CSS start  */
 .feature__section {
     margin: 75px 135px;
@@ -107,8 +115,9 @@ nav ul li {
 }
 
 .feature__images img {
-    width: 342px;
-    height: 342px;
+    /* width: 342px;
+    height: 342px; */
+    width: 24vw;
 }
 
 .feature__text {
@@ -128,6 +137,9 @@ nav ul li {
 
 /* quick list feature section styling CSS end  */
 
+
+
+/* feature love and enjoy section start  */
 .feature_section_love__enjoy {
     width: 80vw;
     margin: 0 auto;
@@ -186,8 +198,11 @@ nav ul li {
     font-size: 45px;
 }
 
+/* feature love and enjoy section end  */
 
-/* some facts section  */
+
+
+/* some facts section start  */
 .some_facts_section {
     width: 80vw;
     margin: 0 auto;
@@ -222,7 +237,10 @@ nav ul li {
 
 }
 
-/* sponspors section  */
+/* some facts section end  */
+
+
+/* sponspors section  start*/
 .sponspors {
     width: 80vw;
     margin: 0 auto;
@@ -243,6 +261,8 @@ nav ul li {
     grid-template-columns: repeat(5, 1fr);
     margin: 4em 0;
 }
+
+/* sponspors section  end*/
 
 /* footer styling  */
 .footer {
@@ -323,9 +343,6 @@ nav ul li {
     color: var(--green);
 }
 
-
-
-
 .copright__message {
     width: 80vw;
     margin: 3em auto;
@@ -334,4 +351,112 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/* media quary for mobile  */
+
+@media only screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav h1 {
+        padding-left: 80px;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner__title {
+        font-weight: 700;
+        font-size: 1.75rem;
+    }
+
+    .banner__text {
+        padding: 0 30px;
+    }
+
+    .btn__style {
+        padding: 1em 2em;
+    }
+
+    .banner__image img {
+        width: 65vw;
+        margin: 0 5rem;
+    }
+
+    .reaward_and_review_card {
+        column-gap: 10px;
+    }
+
+    /* feature section  */
+    .feature__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10vh 18vw;
+
+    }
+
+    .feature__images {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8em;
+    }
+
+    .feature__text p {
+        width: 450px;
+    }
+
+    .feature_section_love__enjoy {
+        grid-template-columns: 1fr;
+        margin-top: 8em;
+    }
+
+    .feature_section_love_enjoy_image img {
+        margin-left: 120px;
+    }
+
+    .feature_section_love_enjoy_image div {
+        margin-top: 8rem;
+    }
+
+    #btn__position {
+        padding: 6px 15px;
+        margin-left: 210px;
+    }
+
+    #btn__position h1 {
+
+        font-size: 16px;
+    }
+
+
+    .reaward_and_review_card {
+        grid-template-columns: 1fr;
+        margin: 0 4rem;
+        padding: 0;
+
+    }
+
+    .sponspors__logo__section {
+        grid-template-columns: 1fr;
+        row-gap: 0.2em;
+        margin-left: 7rem;
+    }
+
+    .sponspors__logo__section img {
+        padding: 20px 0;
+    }
+
+    .footer,
+    #extra__section_heading {
+        display: none;
+    }
 }
