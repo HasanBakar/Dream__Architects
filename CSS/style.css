@@ -4,6 +4,13 @@
     --button__color: #FF900E;
     --button__text_color: #FFFFFF;
     --footer__bg_color: #FFF4E7;
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #666;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 /* default browser style reseting */
@@ -195,6 +202,7 @@ nav ul li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 6rem;
+
 }
 
 .awards_card {
@@ -205,12 +213,13 @@ nav ul li {
     width: 100%;
     border: solid var(--button__color) 1.5px;
     padding: 2em 3em;
+
 }
 
 .awards_card:hover {
     background-color: rgba(248, 232, 185, 0.916);
-    transform: box-shadow 0.1s;
-    transform-box: view-box;
+    transform: rotate(-0.9turn);
+
 }
 
 /* sponspors section  */
@@ -236,9 +245,90 @@ nav ul li {
 }
 
 /* footer styling  */
-footer {
+.footer {
     width: 80vw;
-    margin: 7.5em auto;
+    margin: 0 auto;
+}
+
+#extra__section_heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.75rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    text-decoration: wavy;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: var(--green);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .map {
+    width: 100%;
+}
+
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--green);
+    margin: 0 .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background: var(--black);
+}
+
+.footer .credit {
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
+
+
+
+.copright__message {
+    width: 80vw;
+    margin: 3em auto;
     height: 4em;
     background-color: var(--footer__bg_color);
     display: flex;
