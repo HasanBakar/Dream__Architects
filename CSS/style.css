@@ -82,6 +82,7 @@ nav ul li {
 /* banner styling CSS end  */
 
 
+/* quick list feature section styling CSS start  */
 .feature__section {
     margin: 75px 135px;
     width: 1152px;
@@ -115,4 +116,63 @@ nav ul li {
 
 #feature__title_part {
     color: var(--button__color);
+}
+
+/* quick list feature section styling CSS end  */
+
+.feature_section_love__enjoy {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.5rem;
+}
+
+/* .feature_section_love_enjoy_text {
+    background-color: red;
+} */
+
+.feature__left__border {
+    border-left: 4.5px solid var(--button__color);
+    margin-bottom: 2rem;
+}
+
+.feature__left__border h1 {
+    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Work Sans';
+    padding-left: 0.25em;
+}
+
+.feature_love__text_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature_text_card {
+    margin: 1rem 1.25rem;
+    padding: 0.75rem 1.25rem;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.feature_section_love_enjoy_image {
+    position: relative;
+}
+
+.feature_section_love_enjoy_image img {
+    width: 38vw;
+}
+
+#btn__position {
+    position: absolute;
+    left: -51px;
+    padding: 2em 3.5em;
+    bottom: -77px;
+}
+
+#btn__position h1 {
+    font-weight: 900;
+    font-size: 45px;
 }
