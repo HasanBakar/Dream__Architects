@@ -3,6 +3,7 @@
     --primary__bg__color: #ff900e1a;
     --button__color: #FF900E;
     --button__text_color: #FFFFFF;
+    --footer__bg_color: #FFF4E7;
 }
 
 /* default browser style reseting */
@@ -228,8 +229,19 @@ nav ul li {
     margin: 0.5em 0;
 }
 
-.sponspors__logo__section{
+.sponspors__logo__section {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: 4em 0;
+}
+
+/* footer styling  */
+footer {
+    width: 80vw;
+    margin: 7.5em auto;
+    height: 4em;
+    background-color: var(--footer__bg_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
